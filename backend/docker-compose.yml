@@ -36,8 +36,8 @@ services:
     depends_on:
       - mysql
       - composer
-    build: ./php
-    image: wordpress_image
+    # build: ./php
+    image: wordpress:latest
     ports:
       - "8020:80"
     restart: always
